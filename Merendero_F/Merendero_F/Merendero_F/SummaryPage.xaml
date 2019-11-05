@@ -7,6 +7,38 @@
              x:Class="Merendero_F.SummaryPage">
     <ContentPage.Content>
         <StackLayout>
+            <ListView x:Name="ListView"
+                  SeparatorColor="Silver"
+                  ItemSelected="ListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10*"/>
+                                    <ColumnDefinition Width="80*"/>
+                                    <ColumnDefinition Width="10*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Column="0"
+                                       Grid.Row="0"
+                                       Source="{Binding ImgUrl}"/>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="0"
+                                       Text="{Binding Name}"/>
+
+                                <Label Grid.Column="2"
+                                       Grid.Row="0"
+                                       Text="{Binding Quantity}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
             <Label x:Name="lbl_Total"
                    FontSize="Large"/>
             <Button Text="Ordina"

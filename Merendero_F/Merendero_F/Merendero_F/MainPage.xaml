@@ -9,11 +9,11 @@
     <StackLayout>
         <SearchBar x:Name="SearchBar" 
                    Placeholder="Search" 
-                   PlaceholderColor="Red"
+                   PlaceholderColor="Silver"
                    TextChanged="SearchBar_TextChanged"/>
         
         <ListView x:Name="ListView"
-                  SeparatorColor="Lime"
+                  SeparatorColor="Silver"
                   ItemSelected="ListView_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>

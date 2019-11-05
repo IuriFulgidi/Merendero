@@ -16,6 +16,8 @@ namespace Merendero_F
         {
             InitializeComponent();
 
+            ListView.ItemsSource = list;
+
             //totale costo
             double tot = 0;
             foreach (Merenda m in list)
