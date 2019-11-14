@@ -6,10 +6,10 @@
              mc:Ignorable="d"
              x:Class="Merendero_F.MainPage">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="#FBEDA6" Padding="10,5,10,5">
         <SearchBar x:Name="SearchBar" 
                    Placeholder="Search" 
-                   PlaceholderColor="Silver"
+                   PlaceholderColor="Coral"
                    TextChanged="SearchBar_TextChanged"/>
         
         <ListView x:Name="ListView"
@@ -32,8 +32,10 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        
+
         <Button Text="Riepilogo"
+                BackgroundColor="Coral"
+                FontSize="Large"
                 Clicked="Riepologo_Clicked"/>
         
     </StackLayout>

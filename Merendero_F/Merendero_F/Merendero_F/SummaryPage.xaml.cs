@@ -23,7 +23,7 @@ namespace Merendero_F
             foreach (Merenda m in list)
                 tot += m.Cost * m.Quantity;
 
-            lbl_Total.Text = $"Totale: {tot}";
+            lbl_Total.Text = $"Totale: {tot} €";
 
             if(tot==0)
                 btn_Ordina.IsEnabled = false;

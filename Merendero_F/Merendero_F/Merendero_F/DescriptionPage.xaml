@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="Merendero_F.DescriptionPage">
     <ContentPage.Content>
-        <StackLayout Padding="5,5,5,5" VerticalOptions="Start">
+        <StackLayout BackgroundColor="#FBEDA6" Padding="10,5,10,5" VerticalOptions="Start">
             
             <Label Text="{Binding Name}" FontSize="Large"/>
             
@@ -23,10 +23,9 @@
                      Minimum="0"
                      Increment="1"
                      Value="{Binding Quantity}"/>
-            
-            <Label Text="{Binding Source={Reference stepper}, Path=Value, StringFormat='Quantità: {0}'}"/>
-            
-            
+
+            <Label Text="{Binding Source={Reference stepper}, Path=Value, StringFormat='Quantità: {0}'}"
+                   FontSize="Large"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -6,33 +6,32 @@
              mc:Ignorable="d"
              x:Class="Merendero_F.SummaryPage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="#FBEDA6" Padding="10,5,10,5">
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="CenterAndExpand"
+                       Text="Nome"
+                       TextColor="Black"
+                       FontSize="17"/>
+                <Label Text="Quantità"
+                       TextColor="Black"
+                       FontSize="17"
+                       HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
             <ListView x:Name="ListView"
-                  SeparatorColor="Silver">
+                  SeparatorColor="Coral">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="100"/>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="10*"/>
-                                    <ColumnDefinition Width="80*"/> 
-                                    <ColumnDefinition Width="10*"/>
-                                </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0"
-                                       Grid.Row="0"
-                                       Source="{Binding ImgUrl}"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Image WidthRequest="100"
+                                   HeightRequest="100"
+                                   Source="{Binding ImgUrl}"/>
 
-                                <Label Grid.Column="1"
-                                       Grid.Row="0"
-                                       Text="{Binding Name}"/>
+                                <Label Text="{Binding Name}"/>
 
-                                <Label Grid.Column="2"
-                                       Grid.Row="0"
-                                       Text="{Binding Quantity}"/>
-                            </Grid>
+                                <Label Text="{Binding Quantity}"
+                                   HorizontalOptions="End"/>
+                            </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
@@ -41,6 +40,8 @@
             <Label x:Name="lbl_Total"
                    FontSize="Large"/>
             <Button Text="Ordina"
+                    BackgroundColor="Coral"
+                    FontSize="Large"
                     x:Name="btn_Ordina"
                     Clicked="Button_Clicked"/>
         </StackLayout>
