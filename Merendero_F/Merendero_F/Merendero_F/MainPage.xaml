@@ -4,13 +4,26 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Merendero_F.MainPage">
+             x:Class="Merendero_F.MainPage"
+             BackgroundColor="#FBEDA6">
 
     <StackLayout BackgroundColor="#FBEDA6" Padding="10,5,10,5">
         <SearchBar x:Name="SearchBar" 
-                   Placeholder="Search" 
+                   Placeholder="Cerca" 
                    PlaceholderColor="Coral"
-                   TextChanged="SearchBar_TextChanged"/>
+                   TextChanged="SearchBar_TextChanged"
+                   BackgroundColor="AliceBlue"/>
+        
+        <StackLayout Orientation="Horizontal">
+            <Label HorizontalOptions="CenterAndExpand"
+                       Text="Nome"
+                       TextColor="Black"
+                       FontSize="17"/>
+            <Label Text="Prezzo"
+                       TextColor="Black"
+                       FontSize="17"
+                       HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
         
         <ListView x:Name="ListView"
                   SeparatorColor="Silver"
@@ -26,7 +39,7 @@
                             <Label Text="{Binding Name}"/>
 
                             <Label Text="{Binding Cost, StringFormat='{0} €'}"
-                                   HorizontalOptions="End"/>
+                                   HorizontalOptions="EndAndExpand"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

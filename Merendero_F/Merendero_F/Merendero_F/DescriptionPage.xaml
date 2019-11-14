@@ -4,10 +4,10 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Merendero_F.DescriptionPage">
+             x:Class="Merendero_F.DescriptionPage"
+             BackgroundColor="#FBEDA6">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#FBEDA6" Padding="10,5,10,5" VerticalOptions="Start">
-            
             <Label Text="{Binding Name}" FontSize="Large"/>
             
             <Image HeightRequest="300"
@@ -26,6 +26,7 @@
 
             <Label Text="{Binding Source={Reference stepper}, Path=Value, StringFormat='Quantità: {0}'}"
                    FontSize="Large"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

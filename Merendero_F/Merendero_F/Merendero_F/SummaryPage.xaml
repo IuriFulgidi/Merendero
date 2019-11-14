@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Merendero_F.SummaryPage">
+             x:Class="Merendero_F.SummaryPage"
+             BackgroundColor="#FBEDA6">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#FBEDA6" Padding="10,5,10,5">
             <StackLayout Orientation="Horizontal">
@@ -24,19 +25,17 @@
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Image WidthRequest="100"
-                                   HeightRequest="100"
                                    Source="{Binding ImgUrl}"/>
 
                                 <Label Text="{Binding Name}"/>
 
                                 <Label Text="{Binding Quantity}"
-                                   HorizontalOptions="End"/>
+                                   HorizontalOptions="EndAndExpand"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
             <Label x:Name="lbl_Total"
                    FontSize="Large"/>
             <Button Text="Ordina"
