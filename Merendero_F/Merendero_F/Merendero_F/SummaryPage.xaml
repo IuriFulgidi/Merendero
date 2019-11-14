@@ -8,8 +8,7 @@
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="ListView"
-                  SeparatorColor="Silver"
-                  ItemSelected="ListView_ItemSelected">
+                  SeparatorColor="Silver">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -19,7 +18,7 @@
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="10*"/>
-                                    <ColumnDefinition Width="80*"/>
+                                    <ColumnDefinition Width="80*"/> 
                                     <ColumnDefinition Width="10*"/>
                                 </Grid.ColumnDefinitions>
                                 <Image Grid.Column="0"
