@@ -24,8 +24,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Image WidthRequest="100"
-                                   Source="{Binding ImgUrl}"/>
+                                <Image Source="{Binding ImgUrl}"/>
 
                                 <Label Text="{Binding Name}"/>
 

@@ -46,7 +46,7 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button Text="Riepilogo"
+        <Button Text="Carrello"
                 BackgroundColor="Coral"
                 FontSize="Large"
                 Clicked="Riepologo_Clicked"/>
