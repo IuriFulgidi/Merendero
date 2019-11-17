@@ -31,7 +31,7 @@ namespace Merendero_F
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Ordine inviato","", "ok");
+            DisplayAlert("Ordine inviato","buon appetito", "ok");
         }
     }
 }

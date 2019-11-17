@@ -105,7 +105,7 @@
     <AndroidResource Include="Resources\drawable-hdpi\foto.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ciambella.jpg" />
+    <AndroidResource Include="Resources\drawable\ciambella.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\coca.jpg" />
@@ -114,19 +114,19 @@
     <AndroidResource Include="Resources\drawable\cotto.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\crudo.jpg" />
+    <AndroidResource Include="Resources\drawable\crudo.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\fanta.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lemonsoda.jpg" />
+    <AndroidResource Include="Resources\drawable\speciale.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\salame.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\speciale.jpg" />
+    <AndroidResource Include="Resources\drawable\lemonsoda.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

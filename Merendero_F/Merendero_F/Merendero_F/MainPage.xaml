@@ -11,8 +11,7 @@
         <SearchBar x:Name="SearchBar" 
                    Placeholder="Cerca" 
                    PlaceholderColor="Coral"
-                   TextChanged="SearchBar_TextChanged"
-                   BackgroundColor="AliceBlue"/>
+                   TextChanged="SearchBar_TextChanged"/>
         
         <StackLayout Orientation="Horizontal">
             <Label HorizontalOptions="CenterAndExpand"
@@ -27,7 +26,7 @@
         
         <ListView x:Name="ListView"
                   SeparatorColor="Silver"
-                  ItemSelected="ListView_ItemSelected">
+                  ItemTapped="ListView_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
