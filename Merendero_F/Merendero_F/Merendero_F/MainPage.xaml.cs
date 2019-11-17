@@ -32,10 +32,15 @@ namespace Merendero_F
                 new Merenda { Name = "Focaccia al salame", Description = "Una bella focaccia al salame", ImgUrl = "salame.jpg" , Cost =1.50, Quantity=0 },
                 new Merenda { Name = "Focaccia al crudo", Description = "Una bella focaccia con il prosciutto crudo", ImgUrl = "crudo.png" , Cost =1.50 , Quantity=0 },
                 new Merenda { Name = "Focaccia al cotto", Description = "Una bella focaccia con il prosciutto cotto", ImgUrl = "cotto.jpg" , Cost =1.50 , Quantity=0 },
+                new Merenda { Name = "Pizza", Description = "Pizza margherita al taglio", ImgUrl = "pizza.png" , Cost =1, Quantity=0 }
                 new Merenda { Name = "Ciambella", Description = "Per uno spuntino veloce e dolce", ImgUrl = "ciambella.png" , Cost =1 , Quantity=0 },
+                new Merenda { Name = "Cornetto vuoto", Description = "Dolce cornetto semplice", ImgUrl = "cornetto_vuoto.png" , Cost =1, Quantity=0 },
+                new Merenda { Name = "Cornetto al cioccolato", Description = "Dolce cornetto ripieno al cioccolato", ImgUrl = "cornetto_cioccolato.jpg" , Cost =1, Quantity=0 },
+                new Merenda { Name = "Cornetto all'albicocca", Description = "Dolce cornetto ripieno all' albicocca", ImgUrl = "cornetto_albicocca.jpg" , Cost =1, Quantity=0 },
+                new Merenda { Name = "Cornetto alla crema", Description = "Dolce cornetto ripieno alla crema", ImgUrl = "cornetto_crema.jpg" , Cost =1, Quantity=0 },
                 new Merenda { Name = "Lemon Soda", Description = "Classica Lemon Soda", ImgUrl = "lemonsoda.jpg" , Cost =1 , Quantity=0 },
                 new Merenda { Name = "Coca Cola", Description = "Classica Coca Cola", ImgUrl = "coca.jpg" , Cost =1, Quantity=0 },
-                new Merenda { Name = "Fanta", Description = "Un succo al'arancia Fantastico", ImgUrl = "fanta.jpg" , Cost =1 , Quantity=0 }
+                new Merenda { Name = "Fanta", Description = "Un succo al'arancia Fantastico", ImgUrl = "fanta.jpg" , Cost =1 , Quantity=0 },
                 //new item template
                 //new Merenda { Name = "", Description = "", ImgUrl = "" , Cost =1, Quantity=0 },
             };
