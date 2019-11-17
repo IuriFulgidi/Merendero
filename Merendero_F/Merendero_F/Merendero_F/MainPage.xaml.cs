@@ -47,7 +47,7 @@ namespace Merendero_F
         }
 
         //apertura pagina con dettagli
-        private async void ListView_ItemTapped(object sender, SelectedItemChangedEventArgs e)
+        private async void ListView_ItemSelcted(object sender, SelectedItemChangedEventArgs e)
         {
             await Navigation.PushAsync(new DescriptionPage(e.SelectedItem as Merenda));
         }
