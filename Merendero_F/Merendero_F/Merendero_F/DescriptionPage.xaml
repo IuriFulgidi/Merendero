@@ -5,9 +5,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Merendero_F.DescriptionPage"
-             BackgroundColor="#FBEDA6">
+             BackgroundColor="#127ac7">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#FBEDA6" Padding="10,5,10,5" VerticalOptions="Start">
+        <StackLayout Padding="10,5,10,5" VerticalOptions="Start">
             <Label Text="{Binding Name}" FontSize="Large"/>
             
             <Image HeightRequest="300"
@@ -15,18 +15,28 @@
                    Source="{Binding ImgUrl}"/>
 
             <Label Text="{Binding Description}"
-                   TextColor="Gray"
+                   TextColor="White"
                    FontSize="Small"/>
 
             <Stepper x:Name="stepper"
                      Maximum="99"
                      Minimum="0"
                      Increment="1"
-                     Value="{Binding Quantity}"/>
+                     Value="{Binding Quantity}"
+                     ValueChanged="Stepper_ValueChanged"/>
 
             <Label Text="{Binding Source={Reference stepper}, Path=Value, StringFormat='Quantità: {0}'}"
+                   TextColor="White"
                    FontSize="Large"/>
-            
+
+            <StackLayout Padding="80,20,80,0">
+                <Button x:Name="btn_Aggiungi"
+                        Text="Aggiungi"
+                        BackgroundColor="#1dabf0"
+                        TextColor="White"
+                        FontSize="Large"
+                        Clicked="Aggiungi_Clicked"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

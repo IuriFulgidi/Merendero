@@ -5,25 +5,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Merendero_F.MainPage"
-             BackgroundColor="#FBEDA6">
+             BackgroundColor="#127ac7">
 
-    <StackLayout BackgroundColor="#FBEDA6" Padding="10,5,10,5">
-        <SearchBar x:Name="SearchBar" 
-                   Placeholder="Cerca" 
-                   PlaceholderColor="Coral"
-                   TextChanged="SearchBar_TextChanged"/>
-        
+    <StackLayout Padding="10,5,10,5">
+
         <StackLayout Orientation="Horizontal">
             <Label HorizontalOptions="CenterAndExpand"
                        Text="Nome"
-                       TextColor="Black"
+                       TextColor="White"
                        FontSize="17"/>
             <Label Text="Prezzo"
-                       TextColor="Black"
+                       TextColor="White"
                        FontSize="17"
                        HorizontalOptions="EndAndExpand"/>
         </StackLayout>
-        
+
         <ListView x:Name="ListView"
                   SeparatorColor="Silver"
                   ItemSelected="ListView_ItemSelcted">
@@ -45,12 +41,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
-        <Button Text="Carrello"
-                BackgroundColor="Coral"
-                FontSize="Large"
-                Clicked="Riepologo_Clicked"/>
-        
     </StackLayout>
 
 </ContentPage>

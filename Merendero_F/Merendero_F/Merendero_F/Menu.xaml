@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="#127ac7"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Merendero_F.Menu">
+    <ContentPage.Content>
+        <StackLayout Padding="5,0,5,10">
+
+            <Image Source="ciambella.png"
+                   HeightRequest="200"/>
+            
+            <StackLayout Padding="10,5,10,5">
+                <StackLayout Orientation="Horizontal"  BackgroundColor="#1dabf0">
+                    <Image Source="speciale.png"
+                            HeightRequest="100"/>
+                    <Label Text="SALATO"
+                           TextColor="White"
+                           FontSize="30"
+                           VerticalOptions="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                    <Button Text=">"
+                           TextColor="White"
+                           BackgroundColor="Transparent"
+                           FontSize="80"
+                           VerticalOptions="Center"
+                           HorizontalOptions="End"
+                            Clicked="Salato_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="#1dabf0">
+                    <Image Source="cornetto_cioccolato.png"
+                           HeightRequest="100"/>
+                    <Label Text="DOLCE"
+                           TextColor="White"
+                           FontSize="30"
+                           VerticalOptions="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                    <Button Text=">"
+                           TextColor="White"
+                           BackgroundColor="Transparent"
+                           FontSize="80"
+                           VerticalOptions="Center"
+                           HorizontalOptions="End"
+                            Clicked="Dolce_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="#1dabf0">
+                    <Image Source="coca.png"
+                           HeightRequest="100"/>
+                    <Label Text="BEVANDE"
+                           TextColor="White"
+                           FontSize="30"
+                           VerticalOptions="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                    <Button Text=">"
+                           TextColor="White"
+                           BackgroundColor="Transparent"
+                           FontSize="80"
+                           VerticalOptions="Center"
+                           HorizontalOptions="End"
+                            Clicked="Bevande_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+                
+            <Button Text="Carrello"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        BackgroundColor="#1dabf0"
+                        FontSize="Large"
+                        VerticalOptions="EndAndExpand"
+                        CornerRadius="15"
+                        Clicked="Riepologo_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -5,21 +5,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Merendero_F.SummaryPage"
-             BackgroundColor="#FBEDA6">
+             BackgroundColor="#127ac7">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#FBEDA6" Padding="10,5,10,5">
+        <StackLayout Padding="10,5,10,5">
             <StackLayout Orientation="Horizontal">
                 <Label HorizontalOptions="CenterAndExpand"
                        Text="Nome"
-                       TextColor="Black"
-                       FontSize="17"/>
+                       FontSize="17"
+                       TextColor="White"/>
                 <Label Text="Quantità"
-                       TextColor="Black"
+                       TextColor="White"
                        FontSize="17"
                        HorizontalOptions="EndAndExpand"/>
             </StackLayout>
             <ListView x:Name="ListView"
-                  SeparatorColor="Coral">
+                  SeparatorColor="Silver">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -41,10 +41,12 @@
             <Label x:Name="lbl_Total"
                    FontSize="Large"/>
             <Button Text="Ordina"
-                    BackgroundColor="Coral"
+                    TextColor="White"
+                    BackgroundColor="#1dabf0"
                     FontSize="Large"
                     x:Name="btn_Ordina"
-                    Clicked="Button_Clicked"/>
+                    Clicked="Button_Clicked"
+                    CornerRadius="15"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
