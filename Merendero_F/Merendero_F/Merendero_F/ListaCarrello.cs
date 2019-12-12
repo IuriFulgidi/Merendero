@@ -11,12 +11,14 @@ namespace Merendero_F
         //metodo per controllare di 
         public static void Aggiungi(Merenda m)
         {
+            lista.Add(m);
             //se la merenda è già stata scelta si sostituisce
             for(int i = 0;i < lista.Count;i++ )
             {
                 if (m.Name == lista[i].Name)
-                    lista[i] = m;
+                    lista.RemoveAt(i);
             }
+            lista.Add(m);
         }
     }
 }
