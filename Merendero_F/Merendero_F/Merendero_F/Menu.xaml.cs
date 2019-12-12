@@ -20,8 +20,11 @@ namespace Merendero_F
         public Menu()
         {
             InitializeComponent();
+            
+            Load();
         }
-        //caricamento lista
+
+        //caricamento liste
         private void Load(string search = null)
         {
             salato = new ObservableCollection<Merenda>
@@ -46,10 +49,9 @@ namespace Merendero_F
                 new Merenda { Name = "Coca Cola", Description = "Classica Coca Cola", ImgUrl = "coca.png" , Cost =1, Quantity=0 },
                 new Merenda { Name = "Fanta", Description = "Un succo al'arancia Fantastico", ImgUrl = "fanta.png" , Cost =1 , Quantity=0 }
             };
-            //new item template
             //new Merenda { Name = "", Description = "", ImgUrl = "" , Cost =1, Quantity=0 },
         }
-
+        
         private async void Bevande_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage(bevande));
@@ -64,29 +66,11 @@ namespace Merendero_F
         {
             await Navigation.PushAsync(new MainPage(salato));
         }
+
         //apertura pagina con riepilogo/carrello per ordinare
         private async void Riepologo_Clicked(object sender, EventArgs e)
         {
-            //lista completa
-            List<Merenda> merende = new List<Merenda>();
-
-            foreach (Merenda m in salato)
-                 merende.Add(m);
-            foreach (Merenda m in dolce)
-                merende.Add(m);
-            foreach (Merenda m in bevande)
-                merende.Add(m);
-
-            //lista riepilogo
-            List<Merenda> list = new List<Merenda>();
-
-            foreach (Merenda m in merende)
-            {
-                if (m.Quantity > 0)
-                    list.Add(m);
-            }
-
-            await Navigation.PushAsync(new SummaryPage(list));
+            await Navigation.PushAsync(new SummaryPage());
         }
     }
 }

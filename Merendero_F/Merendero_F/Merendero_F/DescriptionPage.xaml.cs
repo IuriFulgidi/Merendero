@@ -17,15 +17,26 @@ namespace Merendero_F
             InitializeComponent();
             BindingContext = merenda;
 
+            //attivazione bottone aggiungi
             if (stepper.Value < 1)
                 btn_Aggiungi.IsEnabled = false;
         }
 
+
         private void Aggiungi_Clicked(object sender, EventArgs e)
         {
-            
+            Merenda m= new Merenda();
+
+            m.Name = lbl_nome.Text;
+            m.Description = lbl_desc.Text;
+            m.ImgUrl = img_image.Source.ToString();
+            m.Cost =Convert.ToDouble(lbl_costo.Text);
+            m.Quantity =Convert.ToInt32(stepper.Value);
+
+            ListaCarrello.Aggiungi(m);
         }
 
+        //attivazione bottone aggiungi
         private void Stepper_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             if (stepper.Value < 1)

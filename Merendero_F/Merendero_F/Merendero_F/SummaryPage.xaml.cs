@@ -12,13 +12,13 @@ namespace Merendero_F
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SummaryPage : ContentPage
     {
-        public SummaryPage(List<Merenda> list)
+        public SummaryPage()
         {
             InitializeComponent();
-
+            List<Merenda> list = ListaCarrello.lista;
             ListView.ItemsSource = list;
 
-            //totale costo
+            //calcolo totale costo
             double tot = 0;
             foreach (Merenda m in list)
                 tot += m.Cost * m.Quantity;

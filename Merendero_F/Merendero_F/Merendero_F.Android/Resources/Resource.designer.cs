@@ -5800,49 +5800,49 @@ namespace Merendero_F.Droid
 			public const int avd_show_password_3 = 2130837831;
 			
 			// aapt resource value: 0x7f020056
-			public const int bella = 2130837590;
+			public const int ciambella = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int ciambella = 2130837591;
+			public const int coca = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int coca = 2130837592;
+			public const int cornetto_albicocca = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int cornetto_albicocca = 2130837593;
+			public const int cornetto_cioccolato = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int cornetto_cioccolato = 2130837594;
+			public const int cornetto_crema = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int cornetto_crema = 2130837595;
+			public const int cotto = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int cotto = 2130837596;
+			public const int crudo = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int crudo = 2130837597;
+			public const int design_bottom_navigation_item_background = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int design_bottom_navigation_item_background = 2130837598;
+			public const int design_fab_background = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int design_fab_background = 2130837599;
+			public const int design_ic_visibility = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int design_ic_visibility = 2130837600;
+			public const int design_ic_visibility_off = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int design_ic_visibility_off = 2130837601;
+			public const int design_password_eye = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int design_password_eye = 2130837602;
+			public const int design_snackbar_background = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int design_snackbar_background = 2130837603;
+			public const int fanta = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int fanta = 2130837604;
+			public const int forneria_con_chef = 2130837604;
 			
 			// aapt resource value: 0x7f020065
 			public const int foto = 2130837605;

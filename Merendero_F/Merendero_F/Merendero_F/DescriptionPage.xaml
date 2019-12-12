@@ -8,13 +8,17 @@
              BackgroundColor="#127ac7">
     <ContentPage.Content>
         <StackLayout Padding="10,5,10,5" VerticalOptions="Start">
-            <Label Text="{Binding Name}" FontSize="Large"/>
+            <Label x:Name="lbl_nome"
+                   Text="{Binding Name}" 
+                   FontSize="Large"/>
             
-            <Image HeightRequest="300"
+            <Image x:Name="img_image"
+                   HeightRequest="300"
                    WidthRequest="300"
                    Source="{Binding ImgUrl}"/>
 
-            <Label Text="{Binding Description}"
+            <Label x:Name="lbl_desc"
+                   Text="{Binding Description}"
                    TextColor="White"
                    FontSize="Small"/>
 
@@ -28,6 +32,10 @@
             <Label Text="{Binding Source={Reference stepper}, Path=Value, StringFormat='Quantità: {0}'}"
                    TextColor="White"
                    FontSize="Large"/>
+            
+            <Label x:Name="lbl_costo"
+                   Text="{Binding Cost}"
+                   IsVisible="False"/>
 
             <StackLayout Padding="80,20,80,0">
                 <Button x:Name="btn_Aggiungi"
