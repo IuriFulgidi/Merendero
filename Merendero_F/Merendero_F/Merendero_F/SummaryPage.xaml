@@ -24,7 +24,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Image Aspect="AspectFit"
+                                <Image Aspect="AspectFill"
                                        HeightRequest="100"
                                        WidthRequest="100"
                                        Source="{Binding ImgUrl}"/>
@@ -42,13 +42,26 @@
             </ListView>
             <Label x:Name="lbl_Total"
                    FontSize="Large"/>
-            <Button Text="Ordina"
-                    TextColor="White"
-                    BackgroundColor="#1dabf0"
-                    FontSize="Large"
-                    x:Name="btn_Ordina"
-                    Clicked="Button_Clicked"
-                    CornerRadius="15"/>
+            
+            <StackLayout Orientation="Horizontal">
+                <Button Text="SVUOTA"
+                        TextColor="White"
+                        BackgroundColor="#1dabf0"
+                        FontSize="Large"
+                        x:Name="btn_Svuota"
+                        CornerRadius="15"
+                        Clicked="Btn_Svuota_Clicked"/>
+
+                <Button Padding="110,0,100,0"
+                        Text="ORDINA"
+                        TextColor="White"
+                        BackgroundColor="#1dabf0"
+                        FontSize="Large"
+                        x:Name="btn_Ordina"
+                        Clicked="Btn_Ordina_Clicked"
+                        HorizontalOptions="EndAndExpand"
+                        CornerRadius="15"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -8,7 +8,6 @@
              BackgroundColor="#127ac7">
 
     <StackLayout Padding="10,5,10,5">
-
         <StackLayout Orientation="Horizontal">
             <Label HorizontalOptions="CenterAndExpand"
                        Text="Nome"
@@ -27,7 +26,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
-                            <Image Aspect="AspectFit"
+                            <Image Aspect="AspectFill"
                                    HeightRequest="100"
                                    WidthRequest="100"
                                    Source="{Binding ImgUrl}"/>
@@ -43,8 +42,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
-
     </StackLayout>
 
 </ContentPage>

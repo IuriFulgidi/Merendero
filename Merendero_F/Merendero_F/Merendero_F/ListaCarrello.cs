@@ -11,21 +11,16 @@ namespace Merendero_F
         
         public static void Aggiungi(Merenda m)
         {
-            //aggiungp
             lista.Add(m);
 
-            //se la merenda è già stata scelta si tolgono tutte quelle uguali
-            for(int i = 0;i < lista.Count;i++ )
+            for (int i = 0; i < lista.Count; i++)
             {
-                if (m.Name == lista[i].Name)
+                for (int j = 0; j < lista.Count; j++)
                 {
-                    lista.Remove(m);
-                    lista.Remove(m);
+                    if (i != j && lista[i].Name == lista[j].Name)
+                        lista.RemoveAt(i);
                 }
             }
-
-            //si rimentte
-            lista.Add(m);
         }
 
     }

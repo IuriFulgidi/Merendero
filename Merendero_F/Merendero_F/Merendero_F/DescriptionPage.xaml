@@ -32,16 +32,7 @@
             <Label Text="{Binding Source={Reference stepper}, Path=Value, StringFormat='Quantità: {0}'}"
                    TextColor="White"
                    FontSize="Large"/>
-            
-            <!--label inutili che mi danno i dati-->
-            <Label x:Name="lbl_costo"
-                   Text="{Binding Cost}"
-                   IsVisible="False"/>
-            <Label x:Name="lbl_imgUrl"
-                   Text="{Binding ImgUrl}"
-                   IsVisible="False"/>
-            <!--fine label inutili-->
-            
+
             <StackLayout Padding="80,20,80,0">
                 <Button x:Name="btn_Aggiungi"
                         Text="Aggiungi"

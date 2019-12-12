@@ -20,7 +20,6 @@ namespace Merendero_F
         public Menu()
         {
             InitializeComponent();
-            
             Load();
         }
 

@@ -29,9 +29,16 @@ namespace Merendero_F
                 btn_Ordina.IsEnabled = false;
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Btn_Svuota_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Ordine inviato","buon appetito", "ok");
+            bool scelta = await DisplayAlert("Attenzione!", "Sicuro di voler svuotare il carrello", "Si", "No");
+            if(scelta)
+                ListaCarrello.lista.Clear();
+        }
+
+        private void Btn_Ordina_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Ordine inviato", "buon appetito", "ok");
         }
     }
 }
