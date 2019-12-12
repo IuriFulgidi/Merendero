@@ -29,9 +29,11 @@
                                        WidthRequest="100"
                                        Source="{Binding ImgUrl}"/>
 
-                                <Label Text="{Binding Name}"/>
+                                <Label Text="{Binding Name}"
+                                       TextColor="White"/>
 
                                 <Label Text="{Binding Quantity}"
+                                       TextColor="White"
                                    HorizontalOptions="EndAndExpand"/>
                             </StackLayout>
                         </ViewCell>

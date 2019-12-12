@@ -8,17 +8,25 @@ namespace Merendero_F
     {
         public static List<Merenda> lista = new List<Merenda>();
 
-        //metodo per controllare di 
+        
         public static void Aggiungi(Merenda m)
         {
+            //aggiungp
             lista.Add(m);
-            //se la merenda è già stata scelta si sostituisce
+
+            //se la merenda è già stata scelta si tolgono tutte quelle uguali
             for(int i = 0;i < lista.Count;i++ )
             {
                 if (m.Name == lista[i].Name)
-                    lista.RemoveAt(i);
+                {
+                    lista.Remove(m);
+                    lista.Remove(m);
+                }
             }
+
+            //si rimentte
             lista.Add(m);
         }
+
     }
 }

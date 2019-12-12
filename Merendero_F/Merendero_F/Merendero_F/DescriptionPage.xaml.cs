@@ -22,14 +22,13 @@ namespace Merendero_F
                 btn_Aggiungi.IsEnabled = false;
         }
 
-
         private void Aggiungi_Clicked(object sender, EventArgs e)
         {
             Merenda m= new Merenda();
 
             m.Name = lbl_nome.Text;
             m.Description = lbl_desc.Text;
-            m.ImgUrl = img_image.Source.ToString();
+            m.ImgUrl = lbl_imgUrl.Text;
             m.Cost =Convert.ToDouble(lbl_costo.Text);
             m.Quantity =Convert.ToInt32(stepper.Value);
 
