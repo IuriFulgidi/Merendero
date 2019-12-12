@@ -21,10 +21,6 @@ namespace Merendero_F
 
             costo = merenda.Cost;
             imgUrl = merenda.ImgUrl;
-
-            //attivazione bottone aggiungi
-            if (stepper.Value < 1)
-                btn_Aggiungi.IsEnabled = false;
         }
 
         private void Aggiungi_Clicked(object sender, EventArgs e)
@@ -38,17 +34,6 @@ namespace Merendero_F
             m.Quantity =Convert.ToInt32(stepper.Value);
 
             ListaCarrello.Aggiungi(m);
-
-            DisplayAlert("Orddine aggiornato", $"{m.Quantity} {m.Name} aggiunti alla lista", "ok");
-        }
-
-        //attivazione bottone aggiungi
-        private void Stepper_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            if (stepper.Value < 1)
-                btn_Aggiungi.IsEnabled = false;
-            else
-                btn_Aggiungi.IsEnabled = true;
         }
     }
 }
