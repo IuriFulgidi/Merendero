@@ -47,7 +47,7 @@ namespace Merendero_F
             bevande = new ObservableCollection<Merenda>
             {
                 new Merenda { Name = "Lemon Soda", Description = "Bevanda gassata al gusto di limone", ImgUrl = "lemonsoda.png" , Cost =1 , Quantity=0 },
-                new Merenda { Name = "Oran Soda", Description = "Bevanda gassata al gusto di arancia", ImgUrl = "" , Cost =1, Quantity=0 },
+                new Merenda { Name = "Oran Soda", Description = "Bevanda gassata al gusto di arancia", ImgUrl = "oransoda.png" , Cost =1, Quantity=0 },
                 new Merenda { Name = "Coca Cola", Description = "Taste the feeling", ImgUrl = "coca.png" , Cost =1, Quantity=0 },
                 new Merenda { Name = "Fanta", Description = "Un succo al'arancia Fantastico", ImgUrl = "fanta.png" , Cost =1 , Quantity=0 },
                 new Merenda { Name = "Sprite", Description = "Sprite", ImgUrl = "sprite.png" , Cost =1, Quantity=0 },

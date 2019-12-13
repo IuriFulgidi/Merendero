@@ -26,8 +26,7 @@
                      Maximum="99"
                      Minimum="0"
                      Increment="1"
-                     Value="{Binding Quantity}"
-                     ValueChanged="Stepper_ValueChanged"/>
+                     Value="{Binding Quantity}"/>
 
             <Label Text="{Binding Source={Reference stepper}, Path=Value, StringFormat='Quantità: {0}'}"
                    TextColor="White"

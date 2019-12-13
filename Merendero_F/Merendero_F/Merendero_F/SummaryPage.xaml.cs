@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using System.Collections.ObjectModel;
 using Xamarin.Forms.Xaml;
 
 namespace Merendero_F
@@ -15,7 +16,7 @@ namespace Merendero_F
         public SummaryPage()
         {
             InitializeComponent();
-            List<Merenda> list = ListaCarrello.lista;
+            ObservableCollection<Merenda> list = ListaCarrello.lista;
             ListView.ItemsSource = list;
 
             //calcolo totale costo
