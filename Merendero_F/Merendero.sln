@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merendero.Android", "Merend
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merendero_F.iOS", "Merendero_F\Merendero_F.iOS\Merendero_F.iOS.csproj", "{F5AD1345-9169-43F3-8244-36B3A67E3079}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Merendero_F", "Merendero_F\Merendero_F\Merendero_F.csproj", "{7FB53128-E1B0-4CE1-BF8A-A26A86D11551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Merendero", "Merendero_F\Merendero_F\Merendero.csproj", "{7FB53128-E1B0-4CE1-BF8A-A26A86D11551}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

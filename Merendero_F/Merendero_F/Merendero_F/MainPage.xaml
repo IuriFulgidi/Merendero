@@ -8,6 +8,8 @@
              BackgroundColor="#127ac7">
 
     <StackLayout Padding="10,5,10,5">
+
+        <!--titoletti lista-->
         <StackLayout Orientation="Horizontal">
             <Label HorizontalOptions="CenterAndExpand"
                        Text="Nome"
@@ -16,28 +18,42 @@
             <Label Text="Prezzo"
                        TextColor="White"
                        FontSize="17"
-                       HorizontalOptions="EndAndExpand"/>
+                       HorizontalOptions="End"/>
         </StackLayout>
 
+        <!--Lista merende-->
         <ListView x:Name="ListView"
                   SeparatorColor="Silver"
                   ItemSelected="ListView_ItemSelcted">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal">
-                            <Image Aspect="AspectFit"
-                                   HeightRequest="100"
-                                   WidthRequest="100"
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.5*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="0.5*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Row="0"
+                                   Grid.Column="0"
+                                   Aspect="AspectFit"
+                   		   VerticalOptions="Start"
                                    Source="{Binding ImgUrl}"/>
 
-                            <Label Text="{Binding Name}"
-                                   TextColor="White"/>
-
-                            <Label Text="{Binding Cost, StringFormat='{0} €'}"
+                            <Label Grid.Row="0"
+                                   Grid.Column="1"
                                    TextColor="White"
-                                   HorizontalOptions="EndAndExpand"/>
-                        </StackLayout>
+                                   Text="{Binding Name}"/>
+
+                            <Label Grid.Row="0"
+                                   Grid.Column="2"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   Text="{Binding Cost, StringFormat='{0} €'}"/>
+                        </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

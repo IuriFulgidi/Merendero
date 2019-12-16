@@ -8,48 +8,84 @@
              x:Class="Merendero_F.Menu">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="5,15,5,10">
-
+            <StackLayout >
+                
+                <!--immagine introduttiva-->
                 <Image Source="forneria_con_chef.png"
-                       HeightRequest="170"/>
-            
+                       Aspect="AspectFit"/>
+                
+                <!--categorie-->
                 <StackLayout Padding="10,5,10,5">
-                    <StackLayout Orientation="Horizontal"  BackgroundColor="#1dabf0" Padding="20,0,100,0">
-                        <Image Source="speciale.png"
-                                HeightRequest="80"/>
-                        <Button Text="SALATO"
-                               TextColor="White"
-                               FontSize="30"
-                               VerticalOptions="Center"
-                               HorizontalOptions="EndAndExpand"
-                               BackgroundColor="Transparent"
-                               Clicked="Salato_Clicked"/>
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" BackgroundColor="#1dabf0" Padding="30,0,100,0">
-                        <Image Source="cornetto_cioccolato.png"
+                    <Grid  BackgroundColor="#1dabf0" Padding="20,0,80,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0"
+                               Grid.Row="0"
+                               Source="speciale.png"
                                HeightRequest="80"/>
-                        
-                        <Button Text="DOLCE"
-                               TextColor="White"
-                               FontSize="30"
-                               VerticalOptions="Center"
-                               HorizontalOptions="EndAndExpand"
-                               BackgroundColor="Transparent"
-                               Clicked="Dolce_Clicked"/>
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" BackgroundColor="#1dabf0" Padding="20,0,60,0">
-                        <Image Source="coca.png"
+                        <Button Grid.Column="1"
+                                Grid.Row="0"
+                                Text="SALATO"
+                                TextColor="White"
+                                FontSize="30"
+                                VerticalOptions="Center"
+                                HorizontalOptions="EndAndExpand"
+                                BackgroundColor="Transparent"
+                                Clicked="Salato_Clicked"/>
+                    </Grid>
+                    <Grid BackgroundColor="#1dabf0" Padding="30,0,100,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0"
+                               Grid.Row="0"
+                               Source="cornetto_cioccolato.png"
                                HeightRequest="80"/>
-                        <Button Text="BEVANDE"
-                               TextColor="White"
-                               FontSize="30"
-                               VerticalOptions="Center"
-                               HorizontalOptions="EndAndExpand"
-                               BackgroundColor="Transparent"
-                               Clicked="Bevande_Clicked"/>
-                    </StackLayout>
+
+                        <Button Grid.Column="1"
+                                Grid.Row="0"
+                                Text="DOLCE"
+                                TextColor="White"
+                                FontSize="30"
+                                VerticalOptions="Center"
+                                HorizontalOptions="EndAndExpand"
+                                BackgroundColor="Transparent"
+                                Clicked="Dolce_Clicked"/>
+                    </Grid>
+                    <Grid BackgroundColor="#1dabf0" Padding="20,0,60,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0"
+                               Grid.Row="0"
+                               Source="coca.png"
+                               HeightRequest="80"/>
+                        <Button Grid.Column="1"
+                                Grid.Row="0"
+                                Text="BEVANDE"
+                                TextColor="White"
+                                FontSize="30"
+                                VerticalOptions="Center"
+                                HorizontalOptions="EndAndExpand"
+                                BackgroundColor="Transparent"
+                                Clicked="Bevande_Clicked"/>
+                    </Grid>
                 </StackLayout>
                 
+                <!--Bottone per aprire il carrello-->
                 <Button Text="Carrello"
                             FontAttributes="Bold"
                             TextColor="White"

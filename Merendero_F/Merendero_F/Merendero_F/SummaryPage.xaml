@@ -7,6 +7,8 @@
              x:Class="Merendero_F.SummaryPage"
              BackgroundColor="#127ac7">
     <ContentPage.Content>
+        
+        <!--titoletti lista-->
         <StackLayout Padding="10,5,10,5">
             <StackLayout Orientation="Horizontal">
                 <Label HorizontalOptions="CenterAndExpand"
@@ -18,6 +20,8 @@
                        FontSize="17"
                        HorizontalOptions="EndAndExpand"/>
             </StackLayout>
+            
+            <!--Lista carrello-->
             <ListView x:Name="ListView"
                   SeparatorColor="Silver">
                 <ListView.ItemTemplate>
@@ -40,28 +44,42 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            
+            <!--etichetta che mostra totale-->
             <Label x:Name="lbl_Total"
                    FontSize="Large"/>
-            
-            <StackLayout Orientation="Horizontal">
-                <Button Text="SVUOTA"
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <!--Bottone svuota carrello-->
+                <Button Grid.Row="0"
+                        Grid.Column="0"
+                        Text="SVUOTA"
                         TextColor="White"
                         BackgroundColor="#1dabf0"
                         FontSize="Large"
                         x:Name="btn_Svuota"
                         CornerRadius="15"
                         Clicked="Btn_Svuota_Clicked"/>
-
-                <Button Padding="110,0,100,0"
+                
+                <!--Bottone invio ordine-->
+                <Button Grid.Row="0"
+                        Grid.Column="1"
                         Text="ORDINA"
                         TextColor="White"
                         BackgroundColor="#1dabf0"
                         FontSize="Large"
                         x:Name="btn_Ordina"
                         Clicked="Btn_Ordina_Clicked"
-                        HorizontalOptions="EndAndExpand"
                         CornerRadius="15"/>
-            </StackLayout>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

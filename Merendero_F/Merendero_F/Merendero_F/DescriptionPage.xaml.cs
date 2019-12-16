@@ -12,6 +12,7 @@ namespace Merendero_F
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DescriptionPage : ContentPage
     {
+        //variabili
         double costo;
         string imgUrl;
         public DescriptionPage(Merenda merenda)
@@ -19,13 +20,15 @@ namespace Merendero_F
             InitializeComponent();
             BindingContext = merenda;
 
+            //proprietà della merenda da aggiungere
             costo = merenda.Cost;
             imgUrl = merenda.ImgUrl;
         }
 
         private void Aggiungi_Clicked(object sender, EventArgs e)
         {
-            Merenda m= new Merenda();
+            //item da aggiungere al carrello
+            Merenda m = new Merenda();
 
             m.Name = lbl_nome.Text;
             m.Description = lbl_desc.Text;
@@ -33,6 +36,7 @@ namespace Merendero_F
             m.Cost =costo;
             m.Quantity =Convert.ToInt32(stepper.Value);
 
+            //aggiunta effettiva
             ListaCarrello.Aggiungi(m);
         }
     }

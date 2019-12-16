@@ -7,39 +7,48 @@
              x:Class="Merendero_F.DescriptionPage"
              BackgroundColor="#127ac7">
     <ContentPage.Content>
-        <StackLayout Padding="10,5,10,5" VerticalOptions="Start">
-            <Label x:Name="lbl_nome"
-                   Text="{Binding Name}" 
-                   FontSize="Large"/>
-            
-            <Image x:Name="img_image"
-                   HeightRequest="300"
-                   WidthRequest="300"
-                   Source="{Binding ImgUrl}"/>
+        <ScrollView>
+            <StackLayout Padding="10,5,10,5" VerticalOptions="Start">
+                
+                <!--nome item-->
+                <Label x:Name="lbl_nome"
+                       Text="{Binding Name}" 
+                       FontSize="Large"/>
 
-            <Label x:Name="lbl_desc"
-                   Text="{Binding Description}"
-                   TextColor="White"
-                   FontSize="Small"/>
+                <!--immagine item-->
+                <Image x:Name="img_image"
+                       HeightRequest="300"
+                       WidthRequest="300"
+                       Source="{Binding ImgUrl}"/>
+                
+                <!--descrizione item-->
+                <Label x:Name="lbl_desc"
+                       Text="{Binding Description}"
+                       TextColor="White"
+                       FontSize="Small"/>
+                <!--stepper per aumentare/diminuire quantità item-->
+                <Stepper x:Name="stepper"
+                         Maximum="99"
+                         Minimum="0"
+                         Increment="1"
+                         Value="{Binding Quantity}"/>
+                
+                <!--etichetta per far vedere la quantità-->
+                <Label Text="{Binding Source={Reference stepper}, Path=Value, StringFormat='Quantità: {0}'}"
+                       TextColor="White"
+                       FontSize="Large"/>
 
-            <Stepper x:Name="stepper"
-                     Maximum="99"
-                     Minimum="0"
-                     Increment="1"
-                     Value="{Binding Quantity}"/>
-
-            <Label Text="{Binding Source={Reference stepper}, Path=Value, StringFormat='Quantità: {0}'}"
-                   TextColor="White"
-                   FontSize="Large"/>
-
-            <StackLayout Padding="80,20,80,0">
-                <Button x:Name="btn_Aggiungi"
-                        Text="Aggiungi"
-                        BackgroundColor="#1dabf0"
-                        TextColor="White"
-                        FontSize="Large"
-                        Clicked="Aggiungi_Clicked"/>
+                <StackLayout Padding="80,20,80,0">
+                    
+                    <!--Bottone per confermare l'aggiunta-->
+                    <Button x:Name="btn_Aggiungi"
+                            Text="Aggiungi"
+                            BackgroundColor="#1dabf0"
+                            TextColor="White"
+                            FontSize="Large"
+                            Clicked="Aggiungi_Clicked"/>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

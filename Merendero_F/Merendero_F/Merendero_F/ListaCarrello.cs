@@ -7,9 +7,9 @@ namespace Merendero_F
 {
     class ListaCarrello
     {
+        //lista globale del carrello
         public static ObservableCollection<Merenda> lista = new ObservableCollection<Merenda>();
 
-        
         public static void Aggiungi(Merenda m)
         {
             lista.Add(m);

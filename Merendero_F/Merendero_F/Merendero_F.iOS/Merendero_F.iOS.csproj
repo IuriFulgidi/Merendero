@@ -129,9 +129,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Merendero_F\Merendero_F.csproj">
-      <Project>{A168FBAC-BD61-4779-9AB2-6028564218FC}</Project>
-      <Name>Merendero_F</Name>
+    <ProjectReference Include="..\Merendero_F\Merendero.csproj">
+      <Project>{7FB53128-E1B0-4CE1-BF8A-A26A86D11551}</Project>
+      <Name>Merendero</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
