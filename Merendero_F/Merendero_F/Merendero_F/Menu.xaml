@@ -22,7 +22,7 @@
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="0.5*"/>
-                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Image Grid.Column="0"
                                Grid.Row="0"
@@ -44,7 +44,7 @@
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="0.5*"/>
-                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Image Grid.Column="0"
                                Grid.Row="0"
@@ -63,11 +63,11 @@
                     </Grid>
                     <Grid BackgroundColor="#1dabf0" Padding="20,0,60,0">
                         <Grid.RowDefinitions>
-                            <RowDefinition/>
+                            <RowDefinition />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="0.5*"/>
-                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Image Grid.Column="0"
                                Grid.Row="0"
@@ -86,14 +86,16 @@
                 </StackLayout>
                 
                 <!--Bottone per aprire il carrello-->
-                <Button Text="Carrello"
-                            FontAttributes="Bold"
-                            TextColor="White"
-                            BackgroundColor="#1dabf0"
-                            FontSize="Large"
-                            VerticalOptions="EndAndExpand"
-                            CornerRadius="15"
-                            Clicked="Riepologo_Clicked"/>
+                <StackLayout Padding="15,0,15,10" VerticalOptions="EndAndExpand">
+                    <Button Text="Carrello"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                BackgroundColor="#1dabf0"
+                                FontSize="Large"
+                                VerticalOptions="EndAndExpand"
+                                CornerRadius="15"
+                                Clicked="Riepologo_Clicked"/>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

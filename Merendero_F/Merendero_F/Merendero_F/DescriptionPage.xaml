@@ -42,6 +42,7 @@
                     
                     <!--Bottone per confermare l'aggiunta-->
                     <Button x:Name="btn_Aggiungi"
+                            CornerRadius="15"
                             Text="Aggiungi"
                             BackgroundColor="#1dabf0"
                             TextColor="White"

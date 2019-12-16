@@ -21,6 +21,11 @@ namespace Merendero_F
             ListView.ItemsSource = list;
 
             //calcolo totale costo
+            CalcTotale(list);
+        }
+
+        private void CalcTotale(ObservableCollection<Merenda> list)
+        {
             double tot = 0;
             foreach (Merenda m in list)
                 tot += m.Cost * m.Quantity;
@@ -28,8 +33,8 @@ namespace Merendero_F
             //show del totale
             lbl_Total.Text = $"Totale: {tot} €";
 
-            //non si ordina se il carrello è vuoto
-            if(tot==0)
+            //non si può ordinare se il carrello è vuoto
+            if (tot == 0)
                 btn_Ordina.IsEnabled = false;
         }
 
@@ -39,6 +44,9 @@ namespace Merendero_F
             bool scelta = await DisplayAlert("Attenzione!", "Sicuro di voler svuotare il carrello", "Si", "No");
             if(scelta)
                 ListaCarrello.lista.Clear();
+
+            //aggiornamento totale
+            CalcTotale(ListaCarrello.lista);
         }
 
         //invio ordine

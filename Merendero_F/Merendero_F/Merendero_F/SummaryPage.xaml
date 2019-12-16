@@ -55,7 +55,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition/>
+                    <RowDefinition Height="38"/>
                 </Grid.RowDefinitions>
                 
                 <!--Bottone svuota carrello-->
@@ -64,7 +64,7 @@
                         Text="SVUOTA"
                         TextColor="White"
                         BackgroundColor="#1dabf0"
-                        FontSize="Large"
+                        FontSize="18"
                         x:Name="btn_Svuota"
                         CornerRadius="15"
                         Clicked="Btn_Svuota_Clicked"/>
@@ -75,7 +75,7 @@
                         Text="ORDINA"
                         TextColor="White"
                         BackgroundColor="#1dabf0"
-                        FontSize="Large"
+                        FontSize="18"
                         x:Name="btn_Ordina"
                         Clicked="Btn_Ordina_Clicked"
                         CornerRadius="15"/>
