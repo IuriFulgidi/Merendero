@@ -47,6 +47,7 @@
             
             <!--etichetta che mostra totale-->
             <Label x:Name="lbl_Total"
+                   TextColor="White"
                    FontSize="Large"/>
 
             <Grid>

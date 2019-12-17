@@ -6523,19 +6523,19 @@ namespace Merendero_F.Droid
 			public const int salame = 2130837828;
 			
 			// aapt resource value: 0x7f020145
-			public const int sfondo = 2130837829;
+			public const int speciale = 2130837829;
 			
 			// aapt resource value: 0x7f020146
-			public const int speciale = 2130837830;
+			public const int sprite = 2130837830;
 			
 			// aapt resource value: 0x7f020147
-			public const int sprite = 2130837831;
+			public const int tooltip_frame_dark = 2130837831;
 			
 			// aapt resource value: 0x7f020148
-			public const int tooltip_frame_dark = 2130837832;
+			public const int tooltip_frame_light = 2130837832;
 			
 			// aapt resource value: 0x7f020149
-			public const int tooltip_frame_light = 2130837833;
+			public const int vetrina = 2130837833;
 			
 			static Drawable()
 			{

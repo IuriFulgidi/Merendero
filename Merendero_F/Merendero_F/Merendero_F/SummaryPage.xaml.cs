@@ -33,9 +33,14 @@ namespace Merendero_F
             //show del totale
             lbl_Total.Text = $"Totale: {tot} €";
 
-            //non si può ordinare se il carrello è vuoto
             if (tot == 0)
+            {
+                //non si può ordinare se il carrello è vuoto
                 btn_Ordina.IsEnabled = false;
+
+                //non si svuota il carrello vuoto
+                btn_Svuota.IsEnabled = false;
+            }
         }
 
         //svuota carrello

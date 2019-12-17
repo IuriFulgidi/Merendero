@@ -42,11 +42,8 @@ namespace Merendero_F
             {
                 //immagine royality free
                 new Merenda { Name = "Ciambella", Description = "ciambella fritta con zucchero a velo", ImgUrl = "ciambella.png" , Cost =1 , Quantity=0 },
-
-                //immagine illegale
                 new Merenda { Name = "Cornetto vuoto", Description = "Dolce cornetto senza ripieno", ImgUrl = "cornetto_vuoto.png" , Cost =1, Quantity=0 },
-                new Merenda { Name = "Cornetto alla nutella", Description = "Dolce cornetto ripieno di buonissima nutella", ImgUrl = "cornetto_cioccolato.png" , Cost =1, Quantity=0 },
-                new Merenda { Name = "Cornetto all'albicocca", Description = "Dolce cornetto ripieno di marmellata all' albicocca", ImgUrl = "cornetto_albicocca.png" , Cost =1, Quantity=0 },
+                new Merenda { Name = "Cornetto alla nutella", Description = "Dolce cornetto ripieno di buonissima nutella", ImgUrl = "cornetto_nutella.png" , Cost =1, Quantity=0 },
                 new Merenda { Name = "Cornetto alla crema", Description = "Dolce cornetto ripieno alla crema", ImgUrl = "cornetto_crema.jpg" , Cost =1, Quantity=0 },
                 new Merenda { Name = "Bombolone alla crema", Description = "Bombolone fritto ripieno di crema", ImgUrl = "bombolone_crema.png" , Cost =1, Quantity=0 },
                 new Merenda { Name = "Bombolone alla nutella", Description = "Bombolone fritto ripieno di nutella", ImgUrl = "bombolone_nutella.png" , Cost =1, Quantity=0 }
@@ -60,11 +57,11 @@ namespace Merendero_F
                 new Merenda { Name = "Fanta", Description = "Un succo al'arancia Fantastico", ImgUrl = "fanta.png" , Cost =1 , Quantity=0 },
                 new Merenda { Name = "Sprite", Description = "Sprite", ImgUrl = "sprite.png" , Cost =1, Quantity=0 },
 
-                 //immagine illegale
-                new Merenda { Name = "Etstathè al Limone", Description = "Brick di thè infuso alla pesca", ImgUrl = "estathe_limone.png" , Cost =1, Quantity=0 },
-                new Merenda { Name = "Etstathè alla pesca", Description = "Brick di thè infuso al limone", ImgUrl = "etathe_pesca.png" , Cost =1, Quantity=0 },
-                new Merenda { Name = "Lemon Soda", Description = "Bevanda gassata al gusto di limone", ImgUrl = "lemonsoda.png" , Cost =1 , Quantity=0 },
-                new Merenda { Name = "Oran Soda", Description = "Bevanda gassata al gusto di arancia", ImgUrl = "oransoda.png" , Cost =1, Quantity=0 }
+                //immagini illegali
+                //new Merenda { Name = "Etstathè al Limone", Description = "Brick di thè infuso alla pesca", ImgUrl = "estathe_limone.png" , Cost =1, Quantity=0 },
+                //new Merenda { Name = "Etstathè alla pesca", Description = "Brick di thè infuso al limone", ImgUrl = "etathe_pesca.png" , Cost =1, Quantity=0 },
+                //new Merenda { Name = "Lemon Soda", Description = "Bevanda gassata al gusto di limone", ImgUrl = "lemonsoda.png" , Cost =1 , Quantity=0 },
+                //new Merenda { Name = "Oran Soda", Description = "Bevanda gassata al gusto di arancia", ImgUrl = "oransoda.png" , Cost =1, Quantity=0 }
             };
             //new Merenda { Name = "", Description = "", ImgUrl = "" , Cost =1, Quantity=0 },
         }
