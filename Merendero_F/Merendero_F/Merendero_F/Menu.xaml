@@ -11,7 +11,7 @@
             <StackLayout >
                 
                 <!--immagine introduttiva-->
-                <Image Source="forneria_con_chef.png"
+                <Image Source="vetrina.jpg"
                        Aspect="AspectFit"/>
                 
                 <!--categorie-->

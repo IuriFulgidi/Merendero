@@ -111,9 +111,6 @@
     <AndroidResource Include="Resources\drawable\speciale.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\coca.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\cornetto_albicocca.png" />
   </ItemGroup>
   <ItemGroup>
@@ -123,9 +120,6 @@
     <AndroidResource Include="Resources\drawable\cornetto_crema.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\fanta.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\cotto.png" />
   </ItemGroup>
   <ItemGroup>
@@ -133,15 +127,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\salame.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ciambella.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\forneria_con_chef.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\pizza.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\cornetto_vuoto.png" />
@@ -156,7 +141,10 @@
     <AndroidResource Include="Resources\drawable\oransoda.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\sprite.png" />
+    <AndroidResource Include="Resources\drawable\bombolone_crema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bombolone_nutella.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\acqua_frizzante.png" />
@@ -165,10 +153,22 @@
     <AndroidResource Include="Resources\drawable\acqua_naturale.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\bombolone_crema.png" />
+    <AndroidResource Include="Resources\drawable\ciambella.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\bombolone_nutella.png" />
+    <AndroidResource Include="Resources\drawable\coca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fanta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\vetrina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\sprite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

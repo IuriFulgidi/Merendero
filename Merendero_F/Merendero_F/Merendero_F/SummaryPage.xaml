@@ -55,7 +55,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="46"/>
                 </Grid.RowDefinitions>
                 
                 <!--Bottone svuota carrello-->

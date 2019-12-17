@@ -39,7 +39,6 @@
                        FontSize="Large"/>
 
                 <StackLayout Padding="80,20,80,0">
-                    
                     <!--Bottone per confermare l'aggiunta-->
                     <Button x:Name="btn_Aggiungi"
                             CornerRadius="15"
