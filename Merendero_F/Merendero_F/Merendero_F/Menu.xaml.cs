@@ -29,7 +29,7 @@ namespace Merendero_F
             salato = new ObservableCollection<Merenda>
             {
                  //immagine royality free
-                new Merenda { Name = "Pizza", Description = "Pizza margherita al taglio", ImgUrl = "pizza.png" , Cost =1, Quantity=0 },
+                new Merenda { Name = "Pizza", Description = "Pizza margherita al taglio", ImgUrl = "pizza.png" , Cost =1, Quantity=0 }, 
 
                 //immagine illegale
                 new Merenda { Name = "Speciale", Description = "Pizza farcita con pomodoro, prosciutto cotto e mozzarella",ImgUrl="speciale.png" , Cost =1.50 , Quantity=0 },
