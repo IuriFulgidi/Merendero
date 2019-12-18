@@ -30,8 +30,6 @@ namespace Merendero_F
                 if (lista[i].Quantity == 0)
                     lista.RemoveAt(i);
             }
-
         }
-
     }
 }

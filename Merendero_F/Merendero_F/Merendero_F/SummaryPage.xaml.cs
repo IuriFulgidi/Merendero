@@ -16,7 +16,8 @@ namespace Merendero_F
         public SummaryPage()
         {
             InitializeComponent();
-            //lista che si visualizza
+
+            //caricamento listview
             ObservableCollection<Merenda> list = ListaCarrello.lista;
             ListView.ItemsSource = list;
 

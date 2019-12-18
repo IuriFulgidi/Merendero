@@ -13,6 +13,7 @@
                 <!--nome item-->
                 <Label x:Name="lbl_nome"
                        Text="{Binding Name}" 
+                       TextColor="White"
                        FontSize="Large"/>
 
                 <!--immagine item-->
@@ -26,6 +27,7 @@
                        Text="{Binding Description}"
                        TextColor="White"
                        FontSize="Small"/>
+                
                 <!--stepper per aumentare/diminuire quantità item-->
                 <Stepper x:Name="stepper"
                          Maximum="99"
