@@ -7,8 +7,8 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Merendero_F.Droid</RootNamespace>
-    <AssemblyName>Merendero_F.Android</AssemblyName>
+    <RootNamespace>LetsEat.Droid</RootNamespace>
+    <AssemblyName>LetsEat.Android</AssemblyName>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -105,9 +105,6 @@
     <AndroidResource Include="Resources\drawable-hdpi\foto.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lemonsoda.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\speciale.png" />
   </ItemGroup>
   <ItemGroup>
@@ -118,15 +115,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\salame.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\estathe_limone.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\etathe_pesca.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\oransoda.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\acqua_frizzante.png" />
@@ -147,9 +135,6 @@
     <AndroidResource Include="Resources\drawable\pizza.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\vetrina.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\sprite.png" />
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\bombolone_nutella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\vetrina.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
