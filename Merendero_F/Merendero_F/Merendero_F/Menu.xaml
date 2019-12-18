@@ -9,7 +9,6 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout >
-                
                 <!--immagine introduttiva-->
                 <Image Source="vetrina.png"
                        Aspect="AspectFit"/>
@@ -88,14 +87,15 @@
                 <!--Bottone per aprire il carrello-->
                 <StackLayout Padding="15,0,15,10" VerticalOptions="EndAndExpand">
                     <Button Text="Carrello"
-                                FontAttributes="Bold"
-                                TextColor="White"
-                                BackgroundColor="#1dabf0"
-                                FontSize="Large"
-                                VerticalOptions="EndAndExpand"
-                                CornerRadius="15"
-                                Clicked="Riepologo_Clicked"/>
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            BackgroundColor="#1dabf0"
+                            FontSize="Large"
+                            VerticalOptions="EndAndExpand"
+                            CornerRadius="15"
+                            Clicked="Riepologo_Clicked"/>
                 </StackLayout>
+                
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

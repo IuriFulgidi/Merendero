@@ -18,6 +18,7 @@ namespace Merendero_F
         {
             InitializeComponent();
 
+            //caricamento Listview
             ListView.ItemsSource = merende;
         }
 

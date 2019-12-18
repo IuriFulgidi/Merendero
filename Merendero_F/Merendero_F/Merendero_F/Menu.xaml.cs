@@ -20,6 +20,8 @@ namespace Merendero_F
         public Menu()
         {
             InitializeComponent();
+
+            //caricamento
             Load();
         }
 
@@ -51,8 +53,7 @@ namespace Merendero_F
                 new Merenda { Name = "Coca Cola", Description = "Taste the feeling", ImgUrl = "coca.png" , Cost =1, Quantity=0 },
                 new Merenda { Name = "Fanta", Description = "Un succo al'arancia Fantastico", ImgUrl = "fanta.png" , Cost =1 , Quantity=0 },
                 new Merenda { Name = "Sprite", Description = "Sprite", ImgUrl = "sprite.png" , Cost =1, Quantity=0 },
-            }
-            //new Merenda { Name = "", Description = "", ImgUrl = "" , Cost =1, Quantity=0 },
+            };
         }
         
         //apertura lista bevande

@@ -38,8 +38,8 @@
                        TextColor="White"
                        FontSize="Large"/>
 
+                <!--Bottone per confermare l'aggiunta-->
                 <StackLayout Padding="80,20,80,0">
-                    <!--Bottone per confermare l'aggiunta-->
                     <Button x:Name="btn_Aggiungi"
                             CornerRadius="15"
                             Text="Aggiungi"
@@ -48,6 +48,7 @@
                             FontSize="Large"
                             Clicked="Aggiungi_Clicked"/>
                 </StackLayout>
+                
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
