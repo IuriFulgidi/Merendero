@@ -34,24 +34,25 @@ namespace Merendero_F
                 new Merenda { Name = "Speciale", Description = "Pizza farcita con pomodoro, prosciutto cotto e mozzarella",ImgUrl="speciale.png" , Cost =1.50 , Quantity=0 },
                 new Merenda { Name = "Focaccia al salame", Description = "Focaccia farcita al salame", ImgUrl = "salame.png" , Cost =1.50, Quantity=0 },
                 new Merenda { Name = "Focaccia al crudo", Description = "Focaccia farcita con il prosciutto crudo", ImgUrl = "crudo.png" , Cost =1.50 , Quantity=0 },
-                new Merenda { Name = "Focaccia al cotto", Description = "Focaccia farcita con il prosciutto cotto", ImgUrl = "cotto.png" , Cost =1.50 , Quantity=0 }
-                
+                new Merenda { Name = "Focaccia al cotto", Description = "Focaccia farcita con il prosciutto cotto", ImgUrl = "cotto.png" , Cost =1.50 , Quantity=0 },
             };
+
             dolce = new ObservableCollection<Merenda>
             {
-                new Merenda { Name = "Ciambella", Description = "ciambella fritta con zucchero a velo", ImgUrl = "ciambella.png" , Cost =1 , Quantity=0 },
+                new Merenda { Name = "Ciambella", Description = "Ciambella fritta con zucchero a velo", ImgUrl = "ciambella.png" , Cost =1 , Quantity=0 },
                 new Merenda { Name = "Cornetto vuoto", Description = "Dolce cornetto senza ripieno", ImgUrl = "cornetto_vuoto.png" , Cost =1, Quantity=0 },
-                new Merenda { Name = "Cornetto alla nutella", Description = "Dolce cornetto ripieno di buonissima nutella", ImgUrl = "cornetto_nutella.png" , Cost =1, Quantity=0 },
-                new Merenda { Name = "Cornetto alla crema", Description = "Dolce cornetto ripieno alla crema", ImgUrl = "cornetto_crema.jpg" , Cost =1, Quantity=0 },
-                new Merenda { Name = "Bombolone alla crema", Description = "Bombolone fritto ripieno di crema", ImgUrl = "bombolone_crema.png" , Cost =1, Quantity=0 },
-                new Merenda { Name = "Bombolone alla nutella", Description = "Bombolone fritto ripieno di nutella", ImgUrl = "bombolone_nutella.png" , Cost =1, Quantity=0 }
+                new Merenda { Name = "Cornetto alla nutella", Description = "Dolce cornetto ripieno di nutella", ImgUrl = "cornetto_nutella.png" , Cost =1, Quantity=0 },
+                new Merenda { Name = "Cornetto alla crema", Description = "Dolce cornetto ripieno alla crema", ImgUrl = "cornetto_crema.png" , Cost =1, Quantity=0 },
+                new Merenda { Name = "Bombolone alla nutella", Description = "Bombolone fritto farcito alla nutella", ImgUrl = "bombolone_nutella.png" , Cost=1, Quantity=0 },
+                new Merenda { Name = "Bombolone alla crema", Description = "Bombolone fritto farcito alla crema", ImgUrl = "bombolone_crema.png" , Cost=1, Quantity=0 },
             };
+
             bevande = new ObservableCollection<Merenda>
             {
                 new Merenda { Name = "Acqua naturale", Description = "Bottiglietta da 0,5L di acqua nuaturale ", ImgUrl = "acqua_naturale.png" , Cost =0.5, Quantity=0 },
                 new Merenda { Name = "Acqua Frizzante", Description = "Bottiglietta da 0,5L di acqua frizzante", ImgUrl = "acqua_frizzante.png" , Cost =0.5, Quantity=0 },
                 new Merenda { Name = "Coca Cola", Description = "Taste the feeling", ImgUrl = "coca.png" , Cost =1, Quantity=0 },
-                new Merenda { Name = "Fanta", Description = "Un succo al'arancia Fantastico", ImgUrl = "fanta.png" , Cost =1 , Quantity=0 },
+                new Merenda { Name = "Fanta", Description = "Un succo all'arancia Fantastico", ImgUrl = "fanta.png" , Cost =1 , Quantity=0 },
                 new Merenda { Name = "Sprite", Description = "Sprite", ImgUrl = "sprite.png" , Cost =1, Quantity=0 },
             };
         }
